@@ -10,9 +10,9 @@ class AnotherActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_another)
 
-        val back=findViewById<Button>(R.id.go_back)
+        val go_back=findViewById<Button>(R.id.go_back)
 
-        back.setOnClickListener{
+        go_back.setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))
         }
     }
